@@ -1,0 +1,54 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-10 ">
+            <div class="card">
+                <div class="card-header">
+                    <h3 style="text-align: center; position: -ms-page; color: black;">ALTA CELULAR</h3>
+                </div>
+                <div class="col-md-8 ">
+                    <div clss="card-body">
+                        <form>
+                            <div class="form-group col-md-8">
+                                <label form="idMusica">Codigo de la musica:</label>
+                                <input type="number" class="form-control" name="idMusica" [(ngModel)]="mus.idMusica">
+                            </div>
+                            <div class="form-group col-md-8">
+                                <label form="nombre">Nombre:</label>
+                                <input type="text" class="form-control" name="nombre" [(ngModel)]="mus.nombre">
+                            </div>
+                            <br>
+                            <select class="form-control"   style="width:67%" type="text" name="genero" [(ngModel)]="mus.genero">
+                                <option>Elija un genero</option>
+                                <option >ROCK</option>
+                                <option>POP</option>
+                                <option>SALSA</option>
+                                <option>BANDA</option>
+                                <option>NORTEÑA</option>
+                                <option>METALL</option>
+                                <option>ELECTRONICA</option>
+                                <option>JAZZ</option>
+                                <option>CORRIDOS TUMBADOS</option>
+                            </select>
+                            <div class="form-group col-md-8">
+                                <label form="duracion">Duración:</label>
+                                <input type="number" class="form-control" name="duracion" [(ngModel)]="mus.duracion">
+                            </div>
+                            <div class="form-group col-md-8">
+                                <label form="artista">Artista:</label>
+                                <input type="text" class="form-control" name="artista" [(ngModel)]="mus.artista">
+                            </div>
+                            <div class="form-group col-md-8">
+                                <label form="album">Album::</label>
+                                <input type="text" class="form-control" name="album" [(ngModel)]="mus.album">
+                            </div>
+                            <br>
+                            <button type="submit" class="btn btn-success" (click)="GuardarCelukar()">Guardar
+                                Datos</button>
+                            <br>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h2 class="box-title; 15%" style="color: black; text-align: center;">LISTA DE MUSICA</h2>
+
+        </div>
+        <div class="card-body">
+            <table class="table ">
+                <thead>
+                    <tr>
+                    <th scope="col">Codigo de la musica:</th>
+                    <th scope="col">Nombre:</th>
+                    <th scope="col">Genero:</th>
+                    <th scope="col">Duración:</th>
+                    <th scope="col">Artista:</th>
+                    <th scope="col">Album:</th>
+                    <th scope="col">Editar:</th>
+                    <th scope="col">Eliminar:</th>
+                    </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                    <tr *ngFor="let m of mus">
+                    <td>{{m.idMusica}}</td>
+                    <td>{{m.nombre}}</td>
+                    <td>{{m.genero}}</td>
+                    <td>{{m.duracion}}</td>
+                    <td>{{m.artista}}</td>
+                    <td>{{m.album}}</td>
+                    <td><button type="button" class="btn btn-warning mx-10" (click)="editarCan(m)" >editar</button></td>
+                    <td><button type="button" class="btn btn-danger mx-5"  (click)="eliminarCan(m)">eliminar</button></td>
+                  </tr>
+                </tbody>
+            </table>
+
+            
+
+        </div>
+
+    </div>
+
+
+
+            
+
+ 
